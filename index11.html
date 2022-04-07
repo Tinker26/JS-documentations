@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 dars</title>
+    <style>
+        body {
+            height: 100px;
+            width: 200px;
+            border: 1px dotted red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- onmousemove="harakatlanish(event)" onmouseenter="kirish()" onmouseleave="tarkEtish()" bodyiki -->
+    <form onsubmit="jonatish(event)">
+        <input type="text" placeholder="Ismingizni yozing" />
+        <input type="submit" value="Tasdiqlash" />
+    </form>
+
+    <script type="text/javascript">
+        function harakatlanish(e) {
+            console.log(e.clientX, e.clientY);
+        }
+
+        function kirish() {
+            alert("kirish");
+        }
+
+        function tarkEtish() {
+            alert("tark etdi");
+        }
+        window.addEventListener('resize', function() {
+            console.log(window.innerHeight, window.innerWidth);
+        });
+        window.onload = function() {
+            alert('sayt toliq yuklandi');
+        }
+        window.addEventListener('beforeunload', function(e) {
+            e.returnValue = "";
+        })
+        window.onscroll = function() {
+            console.log('sahifa scroll bolyabdi...x');
+        }
+
+        function jonatish(e) {
+            e.preventDefault();
+            console.log('malumotlar sahifani yangilamasdan turib serverga jonatish mumkin.');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <p id="IdRaqam1">Salom barchaga ahvollar yaxshimi?</p>
+    <p id="IdRaqam">Valeykum assalom! rahmat yaxshi. ozingda ishlar qalay?</p>
+
+    <span class="classNomi">men class nomi bilan chaqirilaman</span>
+    <i class="classNomi">Salom Dunyo</i>
+
+    <script type="text/javascript">
+        var tagName = document.getElementsByTagName("p")
+        var byId = document.getElementById("IdRaqam1");
+        var byClass = document.getElementsByClassName("classNomi");
+        var querySel = document.querySelector("#IdRaqam");
+        var querAll = document.getElementsByTagName("p").namedItem("IdRaqam");
+
+
+        querAll.style.backgroundColor = "red";
+        querAll.style.border = "3px solid blue";
+        querAll.style.textTransform = "uppercase";
+
+        var matn = querySel.innerText = 'rahmat!';
+
+        console.log(matn);
+    </script>
+</body>
+
+</html>

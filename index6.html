@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<button onclick="salom_ber('Umar',16)">Ok</button>
+
+
+<script type="text/javascript">
+
+    var hi = "Salom hammaga!";
+    console.log(hi);
+
+    function salom_ber(ism,yosh=18){
+         console.log(hi + ". Mani ismim: " + ism + ". Yoshim: " + yosh);
+    }
+
+    function YoshniQaytar(age) {
+         if(age<7){
+            return "siz maktab yoshiga yetmagansz!";
+         }
+         if(age>=18){
+            return "Siz maktabni bitirgansz"
+         }
+         else{
+            return "Siz maktabga kirgansz";
+         }
+    }
+
+    var mytext = YoshniQaytar(17);
+    console.log(mytext)
+
+</script>
+</body>
+</html>

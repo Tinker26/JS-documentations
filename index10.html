@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="yuklanish()">
+
+
+    <button ondblclick="meniBos()">Meni bosing!</button>
+
+    <select onchange="tanlash(event)">
+        <option>lacetti</option>
+        <option>Damas</option>
+    </select>
+
+    <input type="text" onfocus="inputgaBosish()" onblur="InputdanChiqish()" oninput="yozish(event)" class="matnTegi" />
+
+    <script type="text/javascript">
+        function meniBos() {
+            alert('tugmani 2 marta bosdingiz!');
+        }
+
+        function tanlash(event) {
+            alert(event.target.value);
+        }
+
+        function inputgaBosish() {
+            console.log('Inputga bosish')
+        }
+
+        function InputdanChiqish() {
+            console.log('Inputdan chiqildi')
+        }
+
+        function yozish(event) {
+            console.log(event.target.value);
+        }
+
+        document.querySelector('.matnTegi').addEventListener('paste', function(event) {
+            console.log(event.target.value);
+        })
+
+        function yuklanish() {
+            console.log("body tegimiz va uni ichidagi barcha elementlar yuklandi!")
+        }
+    </script>
+</body>
+
+</html>
