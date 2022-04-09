@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js 28 dars</title>
+</head>
+
+<body>
+
+
+    <script type="text/javascript">
+        // var object={ism:'Azamat'};
+        // var array=['Azamat','Sharipov',18];
+        var array = ['Azamat', {
+            sharif: 'sharipov'
+        }, 18];
+
+        var string = "Azamat";
+        // var arraymi = Array.isArray(string)
+        // var array1 = ['18'];
+
+        // var javob = array1 instanceof Array;
+
+        var javob = array.constructor === Array;
+
+        console.log(javob);
+    </script>
+</body>
+
+</html>
